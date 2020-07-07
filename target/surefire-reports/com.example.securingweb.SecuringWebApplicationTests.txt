@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.example.securingweb.SecuringWebApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 6.985 s <<< FAILURE! - in com.example.securingweb.SecuringWebApplicationTests
+accessUnsecuredResourceThenOk  Time elapsed: 0.653 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<302>
+	at com.example.securingweb.SecuringWebApplicationTests.accessUnsecuredResourceThenOk(SecuringWebApplicationTests.java:48)
+
+loginWithValidUserThenAuthenticated  Time elapsed: 0.034 s  <<< FAILURE!
+java.lang.AssertionError: Authentication should not be null
+	at com.example.securingweb.SecuringWebApplicationTests.loginWithValidUserThenAuthenticated(SecuringWebApplicationTests.java:32)
+
+accessSecuredResourceAuthenticatedThenOk  Time elapsed: 0.039 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.example.securingweb.SecuringWebApplicationTests.accessSecuredResourceAuthenticatedThenOk(SecuringWebApplicationTests.java:62)
+
